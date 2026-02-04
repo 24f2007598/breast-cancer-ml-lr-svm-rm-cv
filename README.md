@@ -1,5 +1,3 @@
-# breast-cancer-ml-lr-svm-rm-cv
-
 # Breast Cancer Classification using Machine Learning
 
 ## Overview
