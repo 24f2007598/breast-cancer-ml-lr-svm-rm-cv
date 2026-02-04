@@ -16,7 +16,15 @@ This project builds and compares multiple machine learning models to classify br
 5. Evaluation using Accuracy and Confusion Matrix
 
 ## Results
-Random Forest achieved the best overall performance due to its ability to capture non-linear feature interactions and handle correlated features effectively.
+
+### Why Logistic Regression and SVM performed better than Random Forest
+
+Logistic Regression and SVM achieved the highest test accuracy (98.24%), indicating that the Breast Cancer dataset is largely linearly separable after feature scaling. Since most features are continuous and well-behaved, linear decision boundaries with proper regularization are sufficient to capture the underlying patterns. Random Forest underperformed slightly because tree-based models can struggle when the signal is mostly linear and the dataset size is relatively small, leading to higher variance and less stable splits.
+
+### Summary
+
+This result suggests that simpler, well-regularized models can outperform more complex ensembles when the data is clean, structured, and close to linearly separable.
+
 
 ## Tech Stack
 - Python
